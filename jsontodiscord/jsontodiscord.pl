@@ -85,9 +85,9 @@ sub discordnotifier {
         my $error = $@;
         if ($error =~ /code: (\d+)/) {
             my $error_code = $1;
-            print "Error sending Discord message: HTTP ERROR $error_code\n";
+            print "Error sending Discord message: $@\n";
         } else {
-            print "Error sending Discord message: $error\n";
+            print "Error sending Discord message: $@\n";
         }
         return;  # or exit if needed
     }
