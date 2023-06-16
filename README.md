@@ -56,7 +56,8 @@ theres listed values of these in wikis or in forums but a good place to start is
 
 using your text editor of choice, line 564 onwards has alot of different variables to play with
 
-```my $data = {
+```
+my $data = {
             'Username'  => $config{username},
             'Name'      => $char->{name},
             'Hp'        => sprintf("%.2f", $char->hp_percent()),
@@ -68,3 +69,4 @@ using your text editor of choice, line 564 onwards has alot of different variabl
             'CY'        => $char->position()->{y},
             'Map'       => $field->name
         };
+```
