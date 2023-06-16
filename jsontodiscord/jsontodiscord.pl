@@ -98,4 +98,4 @@ sub onUnload {
 }
 
 
-Plugins::register('OpenkoreToDiscord', 'Forwards received to Discord.', \&onUnload);
+Plugins::register('jsontodiscord', 'Forwards received to Discord.', \&onUnload);
