@@ -50,12 +50,6 @@ Honestly i had difficulties installing the requirements on windows, i would prov
 
 proceed to the code block below and you can modify this as much as you want, just copy one line say `'Name'      => $char->{name},` paste it on the next line and modify the contents.
 
-the 'Name' is the string label while `$char->{name}` is a variable in the memory of openkore,
-
-theres listed values of these in wikis or in forums but a good place to start is inside your own openkore plugins, browse to `\plugins\needs-review\webMonitor\trunk` and open the `webMonitorServer.pm` 
-
-using your text editor of choice, line 564 onwards has alot of different variables to play with
-
 ```
 my $data = {
             'Username'  => $config{username},
@@ -70,3 +64,44 @@ my $data = {
             'Map'       => $field->name
         };
 ```
+
+the 'Name' is the string label while `$char->{name}` is a variable in the memory of openkore,
+
+theres listed values of these in wikis or in forums but a good place to start is inside your own openkore plugins, browse to `\plugins\needs-review\webMonitor\trunk` and open the `webMonitorServer.pm` 
+
+using your text editor of choice, line 564 onwards has alot of different variables to play with, below are some examples from the said plugin
+
+```
+# Character infos general
+		'characterStatuses' => \@statuses, # Never used
+		'characterSkillPoints' => $char->{points_skill},
+		'characterStatusesSring' => $char->statusesString(),
+		'characterName' => $char->name(),
+		'characterJob' => $jobs_lut{$char->{jobID}},
+		'characterJobID' => $char->{jobID},
+		'characterSex' => $sex_lut{$char->{sex}},
+		'characterSexID' => $char->{sex},
+		'characterLevel' => $char->{lv},
+		'characterJobLevel' => $char->{lv_job},
+		'characterID' => unpack("V", $char->{ID}), # Never used
+		'characterHairColor'=> $haircolors{$char->{hair_color}}, # Never used
+		'characterGuildName' => $char->{guild}{name},
+		'characterZeny' => formatNumber($char->{'zeny'}),
+		'characterStr' => $char->{str},
+		'characterStrBonus' => $char->{str_bonus},
+		'characterStrPoints' => $char->{points_str},
+		'characterAgi' => $char->{agi},
+		'characterAgiBonus' => $char->{agi_bonus},
+		'characterAgiPoints' => $char->{points_agi},
+		'characterVit' => $char->{vit},
+		'characterVitBonus' => $char->{vit_bonus},
+		'characterVitPoints' => $char->{points_vit},
+		'characterInt' => $char->{int},
+		'characterIntBonus' => $char->{int_bonus},
+		'characterIntPoints' => $char->{points_int},
+		'characterDex' => $char->{dex},
+		'characterDexBonus' => $char->{dex_bonus},
+```
+
+
+
