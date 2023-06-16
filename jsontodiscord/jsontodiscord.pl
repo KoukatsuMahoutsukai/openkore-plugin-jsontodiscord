@@ -22,7 +22,7 @@ use Misc;
 use JSON::Tiny qw(encode_json);
 
 #   !!Important to replace this with the url of your own webhook, otherwise info wont be sent to your discord
-my $url = "$ENV{'WEBHOOKURL'}";
+my $url = $ENV{'WEBHOOKURL'};
 
 my $webhook = WebService::Discord::Webhook->new( $url );
 
