@@ -103,5 +103,5 @@ using your text editor of choice, line 564 onwards has alot of different variabl
 		'characterDexBonus' => $char->{dex_bonus},
 ```
 
-
+I think theres some potential here other than a monitoring app. maybe process the data from another app and then send commands back, would be esssentially an alternative to automacros?
 
