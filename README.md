@@ -54,7 +54,7 @@ the 'Name' is the string label while `$char->{name}` is a variable in the memory
 
 theres listed values of these in wikis or in forums but a good place to start is inside your own openkore plugins, browse to `\plugins\needs-review\webMonitor\trunk` and open the `webMonitorServer.pm` 
 
-using your text editor of choice, line 542 onwards has alot of different variables to play with
+using your text editor of choice, line 564 onwards has alot of different variables to play with
 
 ```my $data = {
             'Username'  => $config{username},
