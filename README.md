@@ -3,7 +3,7 @@
 Simple openkore plugin that makes use WebService::Discord::Webhook, to send a status update from openkore to your discord server.
 Helpful for monitoring when you are running the bot from another pc/vps.
 
-Below is a sample output when used as a standalone, it would be in json format and not nice to the eyes
+Code snip below is a sample output when used as a standalone, it would be in json format and not nice to the eyes
 `{"#Deaths":0,"CX":180,"CY":76,"Exp/hr":7969,"Hp":"93.81","Lockmap":"pay_fild08","Map":"pay_fild08","Name":"Lovel","Username":"username010","Weight":"23"}`
 
 Picture below is how it would look like IF used in tandem with a discord bot that receives the messages and deletes each incoming message so the server wont be flodded with messages.
