@@ -33,7 +33,6 @@ in the meantime you can use this plugin then maybe code your own discord bot too
 
 Honestly i had difficulties installing the requirements on windows, i would provide a dockerfile/docker image later on that would make you not bother with the requirements.
 
-
 ## Usage
 1.  Change the `my $url`, simply paste your webhook url from discord there
     
