@@ -6,7 +6,7 @@ Helpful for monitoring when you are running the bot from another pc/vps.
 Below is a sample output when used as a standalone, it would be in json format and not nice to the eyes
 `{"#Deaths":0,"CX":180,"CY":76,"Exp/hr":7969,"Hp":"93.81","Lockmap":"pay_fild08","Map":"pay_fild08","Name":"Lovel","Username":"username010","Weight":"23"}`
 
-When used in tandem with a discord bot that receives the messages and deletes each incoming message so the server wont be flodded with messages.
+Picture below is how it would look like IF used in tandem with a discord bot that receives the messages and deletes each incoming message so the server wont be flodded with messages.
 
 ![discord plugin](https://github.com/KoukatsuMahoutsukai/openkore-plugin-jsontodiscord-main/assets/123940777/f36e717f-7cb7-45f5-a876-d42b24f31bc1)
 
