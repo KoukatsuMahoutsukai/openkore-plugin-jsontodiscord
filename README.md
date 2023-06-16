@@ -45,3 +45,24 @@ Honestly i had difficulties installing the requirements on windows, i would prov
 
     It should work right away if the requirements are installed properly, but i suggest just using the docker that im about to upload if you are not familiar with installing the requirements,
     modifying the stats that you want to see can also be easy i would upload a tutorial for it later on.
+
+## Customizing
+
+proceed to the code block below and you can modify this as much as you want, just copy one line say `'Name'      => $char->{name},` paste it on the next line and modify the contents the 'Name' is the string label while 
+
+`$char->{name}` is a variable in the memory of openkore, theres listed values of these in wikis or in forums but a good place to start is inside your own openkore plugins at `\plugins\needs-review\webMonitor\trunk` and 
+
+open the `webMonitorServer.pm` line 542 onwards has alot of different variables to play with
+
+```my $data = {
+            'Username'  => $config{username},
+            'Name'      => $char->{name},
+            'Hp'        => sprintf("%.2f", $char->hp_percent()),
+            'Weight'    => sprintf("%.0f", $char->weight_percent()),
+            '#Deaths'   => (exists $char->{deathCount} ? $char->{deathCount} : 0),
+            'Exp/hr'    => $bExpPerHour,
+            'Lockmap'   => $config{lockMap},
+            'CX'        => $char->position()->{x},
+            'CY'        => $char->position()->{y},
+            'Map'       => $field->name
+        };
