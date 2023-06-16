@@ -48,7 +48,7 @@ Honestly i had difficulties installing the requirements on windows, i would prov
 
 ## Customizing
 
-proceed to the code block below and you can modify this as much as you want, just copy one line say `'Name'      => $char->{name},` paste it on the next line and modify the contents.
+Proceed to the code block below and you can modify this as much as you want, just copy one line say `'Name'      => $char->{name},` paste it on the next line and modify the contents.
 
 ```
 my $data = {
@@ -67,9 +67,7 @@ my $data = {
 
 the 'Name' is the string label while `$char->{name}` is a variable in the memory of openkore,
 
-theres listed values of these in wikis or in forums but a good place to start is inside your own openkore plugins, browse to `\plugins\needs-review\webMonitor\trunk` and open the `webMonitorServer.pm` 
-
-using your text editor of choice, line 564 onwards has alot of different variables to play with, below are some examples from the said plugin
+theres listed values of these in wikis or in forums but a good place to start is inside your own openkore plugins, browse to `\plugins\needs-review\webMonitor\trunk` and open the `webMonitorServer.pm` using your text editor of choice, line 564 onwards has alot of different variables to play with, below are some examples from the said plugin
 
 ```
 # Character infos general
@@ -102,6 +100,20 @@ using your text editor of choice, line 564 onwards has alot of different variabl
 		'characterDex' => $char->{dex},
 		'characterDexBonus' => $char->{dex_bonus},
 ```
+
+<br>
+Also there a default timer to the interval in between updates to the discord, ive set it on a high one since i use multiple bots and that would make me hit discords rate limiting, set it lower if you want frequent updates 
+just be careful with discords rate limit https://discord.com/developers/docs/topics/rate-limits
+<br><br>
+
+
+```
+#   change the min max to your desired timer, it would pick a value in between. I used a large initial value to avoid rate limiting since i use multiple bots.
+my $minInterval = 70;  # Minimum interval in seconds
+my $maxInterval = 110;  # Maximum interval in seconds
+
+```
+<br>
 
 I think theres some potential here other than a monitoring app. maybe process the data from another app and then send commands back, would be esssentially an alternative to automacros?
 
