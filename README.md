@@ -8,9 +8,7 @@ Below is a sample output when used as a standalone, it would be in json format a
 
 When used in tandem with a discord bot that receives the messages and deletes each incoming message so the server wont be flodded with messages.
 
-
-![image](https://github.com/KoukatsuMahoutsukai/openkore-plugin-jsontodiscord/assets/123940777/964e5bc9-fdcf-46dc-9976-26a387f61dc9)
-
+![discord plugin](https://github.com/KoukatsuMahoutsukai/openkore-plugin-jsontodiscord-main/assets/123940777/f36e717f-7cb7-45f5-a876-d42b24f31bc1)
 
 This adds complexity though and would need more setup so if you want the simple webhook message i suggest the code from sctnightcore which is where i copied most of the code.
 https://github.com/sctnightcore/OpenKorePluginsByMe/blob/master/OpenkoreToDiscord
