@@ -41,10 +41,13 @@ Honestly i had difficulties installing the requirements on windows, i would prov
 2.  paste the jsontodiscord folder inside the plugins folder of your openkore
 
 3.  add the jsontodiscord plugin in the sys.txt inside control folder, the line is like below
-    `loadPlugins_list raiseStat,raiseSkill,reconnect,item_weight_recorder,xconf,eventMacro,macro,jsontodiscord`
-
-    It should work right away if the requirements are installed properly, but i suggest just using the docker that im about to upload if you are not familiar with installing the requirements,
-    modifying the stats that you want to see can also be easy i would upload a tutorial for it later on.
+```
+# loadPlugins_list <list>
+#   if loadPlugins is set to 2, this comma-separated list of plugin names (filename without the extension)
+#   specifies which plugin files to load at startup or when the "plugin load all" command is used.
+loadPlugins_list raiseStat,raiseSkill,reconnect,item_weight_recorder,xconf,eventMacro,macro,jsontodiscord
+```
+It should work right away if the requirements are installed properly, but i suggest just using the docker that im about to upload if you are not familiar with installing the requirements, modifying the stats that you want to see can also be easy i would upload a tutorial for it later on.
 
 ## Customizing
 
